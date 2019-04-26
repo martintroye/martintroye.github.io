@@ -1,0 +1,40 @@
+/**
+
+font-family: 'Josefin Sans', 'sans-serif', 'Arial', 'Tahoma', 'Veranda';
+font-family: 'Source Code Pro', 'monospace', 'Arial', 'Tahoma', 'Veranda';;
+
+**/
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Josefin Sans', 'sans-serif', 'Arial', 'Tahoma', 'Veranda';
+}
+
+.menu__side{
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.menu__side__list{
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  list-style-type: none !important;
+  padding-inline-start: 0;
+}
+
+.menu__side__list li{
+  margin-top: 1rem;
+
+}
+
+.menu__side__headshot{
+  border-radius: 50%;
+}
