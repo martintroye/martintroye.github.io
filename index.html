@@ -12,20 +12,31 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="col-2 menu__side">
-        <div>
-          <img class="menu__side__headshot" src="images/headshot.png">
-          <ul class="menu__side__list">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Resume</li>
+  <div class="container__sidebar--stretch">
+    <nav id="sidebar">
+      <div class="container__sidebar__header">
+          <img src="images/headshot.png" alt="bitmoji headshot" title="My bitmoji">
+          <h3>Troy Martin</h3>
+          <p>Software developer</p>
+      </div>
+      <ul class="container__sidebar__menu">
+        <li title="About me"><i class="fas fa-info-circle"></i> About</li>
+        <li title="My skills"><i class="fas fa-tools"></i> Skills</li>
+        <li title="My projects"><i class="fas fa-code"></i> Portfolio</li>
+        <li title="View my resume"><i class="fas fa-file-pdf"></i> Resume</li>
+      </ul>
+      <div class="container__sidebar__contacts">
+          Contact me
+          <ul class="container__sidebar__contacts__menu">
+            <li title="Email"><i class="fas fa-envelope"></i></li>
+            <li title="linkedIn"><i class="fab fa-linkedin"></i></li>
+            <li title="GitHub"><i class="fab fa-github"></i></li>
           </ul>
         </div>
-      </nav>
-    </div>
+    </nav>
+  </div>
+  <div class="container__content">
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
