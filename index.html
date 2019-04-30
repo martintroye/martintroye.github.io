@@ -1,9 +1,12 @@
+<!-- https://getbootstrap.com/docs/4.1/examples/dashboard/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
   <title>Troy Martin</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -12,32 +15,117 @@
 </head>
 
 <body>
-  <div class="container__sidebar--stretch">
-    <nav id="sidebar">
-      <div class="container__sidebar__header">
-          <img src="images/headshot.png" alt="bitmoji headshot" title="My bitmoji">
-          <h3>Troy Martin</h3>
-          <p>Software developer</p>
-      </div>
-      <ul class="container__sidebar__menu">
-        <li title="About me"><i class="fas fa-info-circle"></i> About</li>
-        <li title="My skills"><i class="fas fa-tools"></i> Skills</li>
-        <li title="My projects"><i class="fas fa-code"></i> Portfolio</li>
-        <li title="View my resume"><i class="fas fa-file-pdf"></i> Resume</li>
-      </ul>
-      <div class="container__sidebar__contacts">
-          Contact me
-          <ul class="container__sidebar__contacts__menu">
-            <li title="Email"><i class="fas fa-envelope"></i></li>
-            <li title="linkedIn"><i class="fab fa-linkedin"></i></li>
-            <li title="GitHub"><i class="fab fa-github"></i></li>
-          </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block container__sidebar">
+        <div class="container__sidebar--sticky">
+            <div class="container__sidebar__header">
+                <img src="images/troymartin_portfolio.jpg" alt="Troy Martin" title="Troy Martin" class="container__sidebar__header__image">
+                <h3>Troy Martin</h3>
+                <p>Software developer</p>
+            </div>
         </div>
-    </nav>
-  </div>
-  <div class="container__content">
+        <ul class="container__sidebar__menu">
+            <li title="My portfolio"><i class="fas fa-code"></i> Portfolio</li>
+            <li title="About me"><i class="fas fa-info-circle"></i> About me</li>
+            <li title="My skills"><i class="fas fa-tools"></i> Skills</li>
+          </ul>
+          <div class="container__sidebar__contacts">
+              Contact me
+              <ul class="container__sidebar__contacts__menu">
+                <li title="Email"><i class="fas fa-envelope"></i></li>
+                <li title="linkedIn"><i class="fab fa-linkedin"></i></li>
+                <li title="GitHub"><i class="fab fa-github"></i></li>
+              </ul>
+            </div>
+      </nav>
+      <main class="col-md-9 ml-sm-auto col-lg-10 px-4 container__content">
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img class="card-img-top card__image" src="images/biosite.png" alt="Card image cap">
+                        <div class="card-body card-body--background">
+                          <h5 class="card-title">Bio site</h5>
+                          <p class="card-text">Bio site developed for Hannah Martin.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body card-body--background">
+                          <h5 class="card-title">Bio site prototype</h5>
+                          <p class="card-text">Prototype of bio site</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body card-body--background">
+                          <h5 class="card-title">Enterprise JavaScript I</h5>
+                          <p class="card-text">GitHub repository.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row--buffer">
+                <div class="col-3">
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body card-body--background">
+                          <h5 class="card-title">Portfolio prototype</h5>
+                          <p class="card-text">The prototype for this site.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body card-body--background">
+                          <h5 class="card-title">Enterprise JavaScript II</h5>
+                          <p class="card-text">GitHub repository.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                </div>
+            </div>
 
-  </div>
+        </div>
+        <div id="about" style="display:none;" >
+            <h2>About me</h2>
+
+            <div class="row">
+                <div class="col">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+
+                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                </div>
+              </div>
+        </div>
+        <div id="skills" style="display:none;">
+            <h2>Skills</h2>
+
+            <div class="row">
+                <div class="col">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+
+                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                </div>
+              </div>
+        </div>
+      </main>
+    </div>
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
