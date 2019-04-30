@@ -23,7 +23,7 @@ body{
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   text-align: center;
   background-color: lightgray;
-  border-right: .3rem solid darkblue;
+  border-right: .1rem solid darkblue;
   display: block !important;
 }
 
@@ -89,5 +89,6 @@ ul{
 }
 
 .card-body--background{
+  border-top: .1rem solid darkblue;
   background-color: lightgray;
 }
