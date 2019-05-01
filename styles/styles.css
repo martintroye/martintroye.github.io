@@ -3,6 +3,12 @@
 font-family: 'Josefin Sans', 'sans-serif', 'Arial', 'Tahoma', 'Veranda';
 font-family: 'Source Code Pro', 'monospace', 'Arial', 'Tahoma', 'Veranda';;
 
+color palette
+ghost white - #fafbfd
+glitter - #e8ecf2
+blue - #256eff
+white - #ffffff
+
 **/
 
 html{
@@ -22,8 +28,8 @@ body{
   padding: 48px 0 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   text-align: center;
-  background-color: lightgray;
-  border-right: .1rem solid darkblue;
+  background-color: #e8ecf2;
+  border-right: .1rem solid #256eff;
   display: block !important;
 }
 
@@ -32,7 +38,7 @@ body{
 }
 
 .container__sidebar__header__image{
-  border-radius: 30%;
+  border-radius: 50%;
   margin-bottom: .9rem;
 }
 
@@ -52,7 +58,7 @@ ul{
 }
 
 .container__sidebar__menu li:hover{
-  color:darkblue;
+  color: #256eff;
   text-decoration: underline;
 }
 
@@ -68,7 +74,7 @@ ul{
 }
 
 .container__sidebar__contacts__menu li:hover{
-  color:darkblue;
+  color: #256eff;
   text-decoration: underline;
 }
 
@@ -89,6 +95,15 @@ ul{
 }
 
 .card-body--background{
-  border-top: .1rem solid darkblue;
-  background-color: lightgray;
+  border-top: .1rem solid #256eff;
+  background-color: #e8ecf2;
+}
+
+.card-title__button{
+  float:right;
+}
+
+.card-title__button:hover{
+  color: #256eff;
+  cursor: pointer;
 }

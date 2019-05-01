@@ -26,46 +26,46 @@
             </div>
         </div>
         <ul class="container__sidebar__menu">
-            <li title="My portfolio"><i class="fas fa-code"></i> Portfolio</li>
-            <li title="About me"><i class="fas fa-info-circle"></i> About me</li>
-            <li title="My skills"><i class="fas fa-tools"></i> Skills</li>
+            <li id="portfolioSection" title="My portfolio"><i class="fas fa-code"></i> Portfolio</li>
+            <li id="aboutMeSection" title="About me"><i class="fas fa-info-circle"></i> About me</li>
+            <li id="skillsSection" title="My skills"><i class="fas fa-tools"></i> Skills</li>
           </ul>
           <div class="container__sidebar__contacts">
               Contact me
               <ul class="container__sidebar__contacts__menu">
-                <li title="Email"><i class="fas fa-envelope"></i></li>
-                <li title="linkedIn"><i class="fab fa-linkedin"></i></li>
-                <li title="GitHub"><i class="fab fa-github"></i></li>
+                <li id="emailLink" title="troyemartin@gmail.com"><i class="fas fa-envelope"></i></li>
+                <li id="linkedInLink" title="linkedIn"><i class="fab fa-linkedin"></i></li>
+                <li id="gitHubLink" title="GitHub"><i class="fab fa-github"></i></li>
               </ul>
             </div>
       </nav>
       <main class="col-md-9 ml-sm-auto col-lg-10 px-4 container__content">
         <div id="portfolio">
-            <h2>Portfolio</h2>
+            <h2><i class="fas fa-code"></i> Portfolio</h2>
             <div class="row">
                 <div class="col-3">
                     <div class="card">
-                        <img class="card-img-top card__image" src="images/biosite.png" alt="Card image cap">
+                        <img class="card-img-top card__image" src="images/biosite.png" alt="Bio site" title="Bio site">
                         <div class="card-body card-body--background">
-                          <h5 class="card-title">Bio site <i class="fas fa-bars" style="float:right;"></i></h5>
-                          <p class="card-text">Bio site developed for Hannah Martin.</p>
+                          <h5 class="card-title">Bio site <i class="fas fa-ellipsis-v card-title__button"></i></h5>
+                          <p class="card-text">Bio web site for Hannah Martin.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="images/hal-gatewood-613602-unsplash.jpg" alt="Bio site prototype" title="Bio site prototype">
                         <div class="card-body card-body--background">
-                          <h5 class="card-title">Bio site prototype <i class="fas fa-bars" style="float:right;"></i></h5>
+                          <h5 class="card-title">Bio site prototype <i class="fas fa-ellipsis-v card-title__button"></i></h5>
                           <p class="card-text">Prototype of bio site</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="images/max-chen-1182043-unsplash.jpg" alt="Enterprise JavaScript I" title="Enterprise JavaScript I">
                         <div class="card-body card-body--background">
-                          <h5 class="card-title">Enterprise JavaScript I <i class="fas fa-bars" style="float:right;"></i></h5>
+                          <h5 class="card-title">Enterprise JavaScript I <i class="fas fa-ellipsis-v card-title__button"></i></h5>
                           <p class="card-text">GitHub repository.</p>
                         </div>
                     </div>
@@ -74,18 +74,18 @@
             <div class="row row--buffer">
                 <div class="col-3">
                     <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="images/jose-alejandro-cuffia-799485-unsplash.jpg" alt="Portfolio prototype" title="Portfolio prototype">
                         <div class="card-body card-body--background">
-                          <h5 class="card-title">Portfolio prototype <i class="fas fa-bars" style="float:right;"></i></h5>
+                          <h5 class="card-title">Portfolio prototype <i class="fas fa-ellipsis-v card-title__button"></i></h5>
                           <p class="card-text">The prototype for this site.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="images/pankaj-patel-516696-unsplash.jpg" alt="Enterprise JavaScript II" title="Enterprise JavaScript II">
                         <div class="card-body card-body--background">
-                          <h5 class="card-title">Enterprise JavaScript II <i class="fas fa-bars" style="float:right;"></i></h5>
+                          <h5 class="card-title">Enterprise JavaScript II <i class="fas fa-ellipsis-v card-title__button"></i></h5>
                           <p class="card-text">GitHub repository.</p>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
 
         </div>
         <div id="about" style="display:none;" >
-            <h2>About me</h2>
+            <h2><i class="fas fa-info-circle"></i> About me</h2>
 
             <div class="row">
                 <div class="col">
@@ -107,7 +107,7 @@
               </div>
         </div>
         <div id="skills" style="display:none;">
-            <h2>Skills</h2>
+            <h2><i class="fas fa-tools"></i> Skills</h2>
 
             <div class="row">
                 <div class="col">
@@ -125,5 +125,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="scripts/links-module.js"></script>
+
+  <script>
+    linksModule.apply();
+  </script>
 </body>
 </html>
