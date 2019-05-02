@@ -1,3 +1,12 @@
+/**
+font-family: 'Josefin Sans', 'sans-serif', 'Arial', 'Tahoma', 'Veranda';
+font-family: 'Source Code Pro', 'monospace', 'Arial', 'Tahoma', 'Veranda';;
+color palette
+ghost white - #fafbfd
+glitter - #e8ecf2
+blue - #256eff
+white - #ffffff
+**/
 body, html {
   height: 100%;
   font-family: 'Josefin Sans', 'sans-serif', 'Arial', 'Tahoma', 'Veranda';
