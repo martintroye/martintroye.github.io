@@ -60,21 +60,21 @@ aside{
   aside {
       height: 100%;
       border-right: .1rem solid #256eff;
-    }
+  }
 }
 
 @media (max-width: 768px) {
   aside {
       border-right: none;
       border-bottom: .1rem solid #256eff;
-    }
-    .title, .img, .contactme, .card-text{
-      display: none;
-    }
+  }
+  .title, .img, .contactme, .card-text{
+    display: none;
+  }
 
-    .nav-item--buffer{
-      margin-top: 0;
-    }
+  .nav-item--buffer{
+    margin-top: 0;
+  }
 
   body{
     padding-top: 5rem;
