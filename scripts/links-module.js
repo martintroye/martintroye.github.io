@@ -20,40 +20,28 @@ var linksModule = (function(exports){
   ; Description: Function to apply links or visibility to various elements that do not have an href.
   */
   exports.apply = function(){
-    // Set the click event to send an email
-    $("#emailLink").on("click",function(){
-      document.location.href = "mailto:troyemartin@gmail.com";
-    });
-
-    // Set the click event to open to the GitHub url in a new window
-    $("#gitHubLink").on("click",function(){
-      window.open("https://github.com/martintroye", "_blank");
-    })
-
-    // Set the click event to open the linkedin profile in a new window
-    $("#linkedInLink").on("click",function(){
-      window.open("https://www.linkedin.com/in/troy-martin-52713b45/", "_blank");
-    })
-
     // Set the click event on the portfolio option to show the portfolio and hide the other sections
-    $("#portfolioSection").on("click",function(){
+    $("#portfolioLink").on("click",function(){
       $("#portfolio").show();
       $("#about").hide();
       $("#skills").hide();
+      //window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
     // Set the click event on the about option to show the about section and hide the other sections
-    $("#aboutMeSection").on("click",function(){
+    $("#aboutMeLink").on("click",function(){
       $("#portfolio").hide();
       $("#about").show();
       $("#skills").hide();
+      //window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
     // Set the click event on the skills option to show the skills section and hide the other sections
-    $("#skillsSection").on("click",function(){
+    $("#skillsLink").on("click",function(){
       $("#portfolio").hide();
       $("#about").hide();
       $("#skills").show();
+      //window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
   };

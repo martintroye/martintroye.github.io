@@ -1,139 +1,181 @@
-<!-- https://getbootstrap.com/docs/4.1/examples/dashboard/ -->
+<!--
+============================================
+; Title: Portfolio
+; Author: Troy Martin
+; Date: 04/30/2019
+; Modified By: Troy Martin
+; Description: Index page for portfolilo site
+;===========================================
+
+Resources:
+Responsive sidebar example https://www.codeply.com/go/SCcAHh39Pa
+
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="google" content="notranslate">
-  <meta http-equiv="Content-Language" content="en">
-  <title>Troy Martin</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Code+Pro:400,700" rel="stylesheet">
-  <link href="styles/styles.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Troy Martin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Code+Pro:400,700" rel="stylesheet">
 
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="col-md-2 d-none d-md-block container__sidebar">
-        <div class="container__sidebar__header" style="text-align: center;">
-          <img src="images/troymartin_portfoliob.jpg" alt="Troy Martin" title="Troy Martin" class="container__sidebar__header__image">
-          <h3>Troy Martin</h3>
-          <p>Software developer</p>
-        </div>
-        <ul class="container__sidebar__menu">
-            <li id="portfolioSection" title="My portfolio"><i class="fas fa-code"></i> Portfolio</li>
-            <li id="aboutMeSection" title="About me"><i class="fas fa-info-circle"></i> About me</li>
-            <li id="skillsSection" title="My skills"><i class="fas fa-tools"></i> Skills</li>
-          </ul>
-          <div class="container__sidebar__contacts" style="text-align: center;">
-              Contact me
-              <ul class="container__sidebar__contacts__menu">
-                <li id="emailLink" title="troyemartin@gmail.com"><i class="fas fa-envelope"></i></li>
-                <li id="linkedInLink" title="linkedIn"><i class="fab fa-linkedin"></i></li>
-                <li id="gitHubLink" title="GitHub"><i class="fab fa-github"></i></li>
-              </ul>
-            </div>
-      </nav>
-      <main class="col-md-9 ml-sm-auto col-lg-10 px-4 container__content">
-        <div id="portfolio">
-            <h2><i class="fas fa-code"></i> Portfolio</h2>
-            <div class="row">
-                <div class="col-3">
-                    <div class="card">
-                        <img class="card-img-top card__image" src="images/biosite.png" alt="Bio site" title="Bio site">
-                        <div class="card-body card-body--background">
-                          <h5 class="card-title">Bio site <i id="bioSite" class="fas fa-ellipsis-v card-title__button"></i></h5>
-                          <p class="card-text">Bio web site for Hannah Martin.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img class="card-img-top" src="images/hal-gatewood-613602-unsplash.jpg" alt="Bio site prototype" title="Bio site prototype">
-                        <div class="card-body card-body--background">
-                          <h5 class="card-title">Bio site prototype <i id="bioPrototype" class="fas fa-ellipsis-v card-title__button"></i></h5>
-                          <p class="card-text">Prototype of bio site</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img class="card-img-top" src="images/max-chen-1182043-unsplash.jpg" alt="Enterprise JavaScript I" title="Enterprise JavaScript I">
-                        <div class="card-body card-body--background">
-                          <h5 class="card-title">Enterprise JavaScript I <i id="javascriptOne" class="fas fa-ellipsis-v card-title__button"></i></h5>
-                          <p class="card-text">GitHub repository.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row--buffer">
-                <div class="col-3">
-                    <div class="card">
-                        <img class="card-img-top" src="images/jose-alejandro-cuffia-799485-unsplash.jpg" alt="Portfolio prototype" title="Portfolio prototype">
-                        <div class="card-body card-body--background">
-                          <h5 class="card-title">Portfolio prototype <i id="portfolioPrototype" class="fas fa-ellipsis-v card-title__button"></i></h5>
-                          <p class="card-text">The prototype for this site.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img class="card-img-top" src="images/pankaj-patel-516696-unsplash.jpg" alt="Enterprise JavaScript II" title="Enterprise JavaScript II">
-                        <div class="card-body card-body--background">
-                          <h5 class="card-title">Enterprise JavaScript II <i id="javascriptTwo" class="fas fa-ellipsis-v card-title__button"></i></h5>
-                          <p class="card-text">GitHub repository.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                </div>
-            </div>
+    <link href="styles/styles.css" rel="stylesheet">
 
-        </div>
-        <div id="about" style="display:none;" >
-            <h2><i class="fas fa-info-circle"></i> About me</h2>
+  </head>
+  <body>
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+          <aside class="col-12 col-md-2 p-0 fixed-top">
+              <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
+                  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                      <li class="nav-item">
+                          <img src="images/troymartin_portfoliob.jpg" alt="Troy Martin" title="Troy Martin" class="img">
+                          <h3>Troy Martin</h3>
+                      </li>
+                      <li class="nav-item" id="portfolioLink" title="My portfolio">
+                        <a class="nav-link pl-0 text-nowrap"><i class="fas fa-code"></i> Portfolio</a>
+                      </li>
+                      <li class="nav-item" id="aboutMeLink" title="About me">
+                          <a class="nav-link pl-0 text-nowrap"><i class="fas fa-info-circle"></i> About me</a>
+                      </li>
+                      <li class="nav-item" id="skillsLink" title="My skills">
+                        <a class="nav-link pl-0 text-nowrap"><i class="fas fa-tools"></i> Skills</a>
+                      </li>
+                      <li class="nav-item nav-item--buffer">
+                          <ul class="contact__list pl-0 text-nowrap">
+                              <p class="contactme">Contact me</p>
+                              <li class="nav-item nav-item--inline"><a class="nav-link nav-link--inline pl-0 text-nowrap" href="mailto:troyemartin@gmail.com"><i class="fas fa-envelope" title="troyemartin@gmail.com"></i></a></li>
+                              <li class="nav-item nav-item--inline"><a class="nav-link nav-link--inline pl-0 text-nowrap" href="https://www.linkedin.com/in/troy-martin-52713b45/" target="_blank"><i class="fab fa-linkedin" title="linkedIn"></i></a></li>
+                              <li class="nav-item nav-item--inline"><a class="nav-link nav-link--inline pl-0 text-nowrap" href="https://github.com/martintroye" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></li>
+                            </ul>
 
-            <div class="row">
-                <div class="col">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                </div>
+                        </li>
+                    </ul>
+              </nav>
+          </aside>
+
+          <main class="col offset-md-2 bg-faded py-3">
+              <div class="row col" id="portfolio">
+                  <h2><i class="fas fa-code"></i> Portfolio</h2>
+                  <div class="row">
+                      <div class="col-4">
+                          <div class="card">
+                              <img class="card-img-top card__image" src="images/biosite.png" alt="Bio site" title="Bio site">
+                              <div class="card-body card-body--background">
+                                <h5 class="card-title"><span class="title">Bio site</span> <i id="bioSite" class="fas fa-ellipsis-v card-title__button"></i></h5>
+                                <p class="card-text">Bio web site for Hannah Martin.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <img class="card-img-top" src="images/hal-gatewood-613602-unsplash.jpg" alt="Bio site prototype" title="Bio site prototype">
+                              <div class="card-body card-body--background">
+                                <h5 class="card-title"><span class="title">Bio site prototype</span> <i id="bioPrototype" class="fas fa-ellipsis-v card-title__button"></i></h5>
+                                <p class="card-text">Prototype of bio site</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <img class="card-img-top" src="images/max-chen-1182043-unsplash.jpg" alt="Enterprise JavaScript I" title="Enterprise JavaScript I">
+                              <div class="card-body card-body--background">
+                                <h5 class="card-title"><span class="title">Enterprise JavaScript I</span> <i id="javascriptOne" class="fas fa-ellipsis-v card-title__button"></i></h5>
+                                <p class="card-text">GitHub repository.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row row--buffer">
+                      <div class="col-4">
+                          <div class="card">
+                              <img class="card-img-top" src="images/jose-alejandro-cuffia-799485-unsplash.jpg" alt="Portfolio prototype" title="Portfolio prototype">
+                              <div class="card-body card-body--background">
+                                <h5 class="card-title"><span class="title">Portfolio prototype</span> <i id="portfolioPrototype" class="fas fa-ellipsis-v card-title__button"></i></h5>
+                                <p class="card-text">The prototype for this site.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <img class="card-img-top" src="images/pankaj-patel-516696-unsplash.jpg" alt="Enterprise JavaScript II" title="Enterprise JavaScript II">
+                              <div class="card-body card-body--background">
+                                <h5 class="card-title"><span class="title">Enterprise JavaScript II</span> <i id="javascriptTwo" class="fas fa-ellipsis-v card-title__button"></i></h5>
+                                <p class="card-text">GitHub repository.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                      </div>
+                  </div>
+
               </div>
-        </div>
-        <div id="skills" style="display:none;">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
+              <div id="about" class="row col" style="display:none;height: 95vh;overflow: auto;" >
+                  <h2><i class="fas fa-info-circle"></i> About me</h2>
 
-            <div class="row">
-                <div class="col">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
-
-                    Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
-                </div>
+                  <div class="row">
+                      <div class="col">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                          Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      </div>
+                    </div>
               </div>
-        </div>
-      </main>
+              <div id="skills" class="row col" style="display:none;height: 95vh;overflow: auto;">
+                <h2><i class="fas fa-tools"></i> Skills</h2>
+
+                <div class="row">
+                    <div class="col">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante vehicula justo porttitor pharetra. Praesent id sodales erat. Sed sed mattis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget aliquet dolor. Maecenas volutpat enim a dignissim volutpat. Fusce semper, ipsum convallis fringilla commodo, mi risus ultrices tortor, at venenatis eros tellus quis arcu. Maecenas sed faucibus elit, sed viverra est. Sed rutrum viverra velit, quis consequat sapien commodo vel. Vivamus accumsan ultricies libero, ac aliquam nisi ultricies at. Fusce a metus eros. Pellentesque et justo ultricies, aliquet quam sed, consectetur sapien. Morbi sit amet metus et dui scelerisque efficitur sed efficitur tortor. Morbi dolor velit, semper vel enim in, porta volutpat purus. Duis vitae sapien a nunc consequat gravida at vel leo.
+                      Sed varius tellus ut sem varius maximus. Fusce dictum diam vitae tellus feugiat, at eleifend felis feugiat. Mauris mollis aliquam mi quis imperdiet. Pellentesque pharetra nisl ante, sit amet faucibus nunc viverra eu. Curabitur ornare volutpat tincidunt. Mauris sit amet sollicitudin tortor. Donec maximus mi quis arcu facilisis dapibus. Vestibulum at mauris faucibus, pulvinar risus quis, lacinia nulla. Integer at malesuada nulla. Nam vel pharetra dolor.
+            </div>
+                  </div>
+            </div>
+
+          </main>
+      </div>
   </div>
+
   <div id="portfolioModal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -154,17 +196,16 @@
     </div>
   </div>
 
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="scripts/links-module.js"></script>
   <script src="scripts/portfolio-modal-module.js"></script>
 
-
   <script>
     linksModule.apply();
     portfolioModalModule.apply();
   </script>
-</body>
+
+  </body>
 </html>
