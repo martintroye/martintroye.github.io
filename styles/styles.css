@@ -10,7 +10,7 @@ white - #ffffff
 body, html {
   height: 100%;
   font-family: 'Josefin Sans', 'sans-serif', 'Arial', 'Tahoma', 'Veranda';
-  
+
 }
 
 aside{
@@ -18,7 +18,7 @@ aside{
   background-color: #e8ecf2;
 }
 
-.img{
+.navbar__nav-item__headShot{
   max-width: 100%;
   height: auto;
   border-radius: 50%;
@@ -49,17 +49,39 @@ aside{
   margin-top: 1.5rem;
 }
 
+.navbar__top{
+  float: right;
+  background-color: #256eff;
+  color: #ffffff;
+  width: 30%;
+}
+
+.nav-link--white{
+  color: #ffffff !important;
+}
+
+.nav-link--white:hover{
+  text-decoration: underline;
+}
+
 .contact__list{
   list-style-type:none;
   padding-inline-start:0;
   padding:.5rem .2rem 1rem;
 }
 
+.top__menu
+{
+  float: right;
+}
 
 @media (min-width: 768px) {
   aside {
       height: 100%;
       border-right: .1rem solid #256eff;
+  }
+  .hamburger {
+    display: none;
   }
 }
 
@@ -68,8 +90,13 @@ aside{
       border-right: none;
       border-bottom: .1rem solid #256eff;
   }
-  .title, .img, .contactme, .card-text{
+
+  .navbar__nav-item__headShot, .contactme, .card-text, .side__item{
     display: none;
+  }
+
+  .card-title{
+    font-size: .8rem;
   }
 
   .nav-item--buffer{
@@ -78,6 +105,10 @@ aside{
 
   body{
     padding-top: 5rem;
+  }
+
+  .hamburger, .navbar-toggler {
+    display: inline !important;
   }
 }
 

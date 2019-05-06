@@ -21,7 +21,7 @@ var linksModule = (function(exports){
   */
   exports.apply = function(){
     // Set the click event on the portfolio option to show the portfolio and hide the other sections
-    $("#portfolioLink").on("click",function(){
+    $(".portfolioLink").on("click",function(){
       $("#portfolio").show();
       $("#about").hide();
       $("#skills").hide();
@@ -29,7 +29,7 @@ var linksModule = (function(exports){
     })
 
     // Set the click event on the about option to show the about section and hide the other sections
-    $("#aboutMeLink").on("click",function(){
+    $(".aboutMeLink").on("click",function(){
       $("#portfolio").hide();
       $("#about").show();
       $("#skills").hide();
@@ -37,7 +37,7 @@ var linksModule = (function(exports){
     })
 
     // Set the click event on the skills option to show the skills section and hide the other sections
-    $("#skillsLink").on("click",function(){
+    $(".skillsLink").on("click",function(){
       $("#portfolio").hide();
       $("#about").hide();
       $("#skills").show();
