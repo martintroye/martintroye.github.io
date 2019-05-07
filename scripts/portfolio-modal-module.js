@@ -37,7 +37,7 @@ var portfolioModalModule = (function(exports){
   /*
   ; Params: selector: string, url: string, target: string (default = _blank)
   ; Response: undefined
-  ; Description: Function to apply click event to the specified selector, opening a url to a specified target..
+  ; Description: Function to apply click event to the specified selector, opening a url to a specified target.
   */
   function setLink(selector, url, target = "_blank"){
     $(selector).off("click").on("click", function(){
@@ -49,7 +49,7 @@ var portfolioModalModule = (function(exports){
   /*
   ; Params: url: string, target: string (default = _blank)
   ; Response: undefined
-  ; Description: Function to apply click event to #modalLink, opening a url to a specified target..
+  ; Description: Function to apply click event to #modalLink, opening a url to a specified target.
   */
   function setSiteLink(url, target = "_blank" ){
     setLink("#modalLink", url, target);
@@ -58,22 +58,37 @@ var portfolioModalModule = (function(exports){
   /*
   ; Params: url: string, target: string (default = _blank)
   ; Response: undefined
-  ; Description: Function to apply click event to #modalGitHubLink, opening a url to a specified target..
+  ; Description: Function to apply click event to #modalGitHubLink, opening a url to a specified target.
   */
   function setGitHubLink(url, target = "_blank"){
     setLink("#modalGitHubLink", url, target);
   }
 
+  /*
+  ; Params: title: string
+  ; Response: undefined
+  ; Description: Function to set the modal title.
+  */
   function setModalTitle(title){
     $("#modalTitle").html(title)
   }
 
+  /*
+  ; Params: body: string
+  ; Response: undefined
+  ; Description: Function to set the modal body.
+  */
   function setModalBody(body){
     $("#modalBody").html(body);
   }
 
+  /*
+  ; Params: display: boolean
+  ; Response: undefined
+  ; Description: Function show and hide the modal dialog.
+  */
   function displayModal(display){
-    $('#portfolioModal').modal(display ? 'show' : 'hide');
+    $('#portfolioModal').modal(display ? "show" : "hide");
   }
 
   /*
@@ -83,7 +98,7 @@ var portfolioModalModule = (function(exports){
   */
   exports.apply = function(){
 
-    // Set the click event to send an email
+    // Set the click event to display the dialog for the Bio Site
     $("#bioSite").on("click",function(){
       setModalTitle("Bio site");
       setModalBody("<ul><li>Custom HTML and CSS</li></ul>");
@@ -95,12 +110,12 @@ var portfolioModalModule = (function(exports){
       displayModal(true);
     });
 
-    // Set the click event to open to the GitHub url in a new window
+    // Set the click event to display the dialog for the Bio Site Prototype
     $("#bioPrototype").on("click",function(){
 
     })
 
-    // Set the click event to open the linkedin profile in a new window
+    // Set the click event to display the dialog for Enterprise JavaScript I
     $("#javascriptOne").on("click",function(){
       setModalTitle("Enterprise JavaScript I");
       setModalBody("<ul><li>Node.js</li></ul>");
@@ -111,12 +126,12 @@ var portfolioModalModule = (function(exports){
       displayModal(true);
     })
 
-    // Set the click event on the portfolio option to show the portfolio and hide the other sections
+    // Set the click event to display the dialog for the Portfolio Prototype
     $("#portfolioPrototype").on("click",function(){
 
     })
 
-    // Set the click event on the about option to show the about section and hide the other sections
+    // Set the click event to display the dialog for Enterprise JavaScript II
     $("#javascriptTwo").on("click",function(){
       setModalTitle("Enterprise JavaScript I");
       setModalBody("<ul><li>Node.js</li><li>Express</li></ul>");
