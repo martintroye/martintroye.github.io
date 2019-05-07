@@ -37,7 +37,6 @@ var linksModule = (function(exports){
       $("#portfolio").show();
       $("#about").hide();
       $("#skills").hide();
-      //window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
     // Set the click event on the about option to show the about section and hide the other sections
@@ -45,7 +44,6 @@ var linksModule = (function(exports){
       $("#portfolio").hide();
       $("#about").show();
       $("#skills").hide();
-      //window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
     // Set the click event on the skills option to show the skills section and hide the other sections
@@ -53,7 +51,6 @@ var linksModule = (function(exports){
       $("#portfolio").hide();
       $("#about").hide();
       $("#skills").show();
-      //window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
   };

@@ -34,6 +34,10 @@ aside{
   cursor: pointer;
 }
 
+.modalLink, .siteLink{
+  cursor: pointer;
+}
+
 .nav-item--inline, .nav-link--inline{
   display: inline !important;
   padding: 0 .4rem 0 0 !important;
@@ -44,6 +48,7 @@ aside{
 
 .card-title__button{
   float:right;
+  cursor: pointer;
 }
 
 .nav-item--buffer{
