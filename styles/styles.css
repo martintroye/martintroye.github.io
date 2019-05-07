@@ -36,6 +36,7 @@ aside{
 
 .nav-item--inline, .nav-link--inline{
   display: inline !important;
+  padding: 0 .4rem 0 0 !important;
 }
 .row--buffer{
   margin-top: 2rem;
@@ -53,7 +54,7 @@ aside{
   float: right;
   background-color: #256eff;
   color: #ffffff;
-  width: 30%;
+  width: 100%;
 }
 
 .nav-link--white{
@@ -75,6 +76,12 @@ aside{
   float: right;
 }
 
+.contactMe{
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   aside {
       height: 100%;
@@ -91,7 +98,7 @@ aside{
       border-bottom: .1rem solid #256eff;
   }
 
-  .navbar__nav-item__headShot, .contactme, .card-text, .side__item{
+  .navbar__nav-item__headShot, .contactMe, .card-text, .side__item{
     display: none;
   }
 

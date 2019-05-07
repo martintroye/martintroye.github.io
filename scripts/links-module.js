@@ -20,6 +20,18 @@ var linksModule = (function(exports){
   ; Description: Function to apply links or visibility to various elements that do not have an href.
   */
   exports.apply = function(){
+    $(".emailLink").on("click", function(){
+      window.location.href = "mailto:troyemartin@gmail.com";
+    });
+
+    $(".linkedInLink").on("click", function(){
+      window.open("https://www.linkedin.com/in/troy-martin-52713b45/","_blank");
+    });
+
+    $(".gitHubLink").on("click", function(){
+      window.open("https://github.com/martintroye","_blank");
+    });
+
     // Set the click event on the portfolio option to show the portfolio and hide the other sections
     $(".portfolioLink").on("click",function(){
       $("#portfolio").show();
