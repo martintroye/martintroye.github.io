@@ -101,7 +101,7 @@ var portfolioModalModule = (function(exports){
     // Set the click event to display the dialog for the Bio Site
     $("#bioSite").on("click",function(){
       setModalTitle("Bio site");
-      setModalBody("<ul><li>Custom HTML and CSS</li></ul>");
+      setModalBody("<ul><li>HTML</li><li>CSS</li></ul>");
 
       showSiteLink();
       setSiteLink("https://martintroye.github.io/biosite/");
@@ -112,13 +112,20 @@ var portfolioModalModule = (function(exports){
 
     // Set the click event to display the dialog for the Bio Site Prototype
     $("#bioPrototype").on("click",function(){
+      setModalTitle("Bio site");
+      setModalBody("<ul><li>HTML</li><li>CSS</li></ul>");
 
+      showSiteLink();
+      setSiteLink("https://martintroye.github.io/biosite/");
+      setGitHubLink("https://github.com/martintroye/biosite");
+
+      displayModal(true);
     })
 
     // Set the click event to display the dialog for Enterprise JavaScript I
     $("#javascriptOne").on("click",function(){
       setModalTitle("Enterprise JavaScript I");
-      setModalBody("<ul><li>Node.js</li></ul>");
+      setModalBody("<ul><li>JavaScript</li><li>Node.js</li></ul>");
 
       hideSiteLink();
       setGitHubLink("https://github.com/martintroye/web-231/");
@@ -128,13 +135,20 @@ var portfolioModalModule = (function(exports){
 
     // Set the click event to display the dialog for the Portfolio Prototype
     $("#portfolioPrototype").on("click",function(){
+      setModalTitle("Portfolio site");
+      setModalBody("<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>");
 
+      showSiteLink();
+      setSiteLink("https://martintroye.github.io");
+      setGitHubLink("https://github.com/martintroye/martintroye.github.io");
+
+      displayModal(true);
     })
 
     // Set the click event to display the dialog for Enterprise JavaScript II
     $("#javascriptTwo").on("click",function(){
       setModalTitle("Enterprise JavaScript I");
-      setModalBody("<ul><li>Node.js</li><li>Express</li></ul>");
+      setModalBody("<ul><li>JavaScript</li><li>Node.js</li><li>Express</li></ul>");
 
       hideSiteLink();
       setGitHubLink("https://github.com/martintroye/web-330/");

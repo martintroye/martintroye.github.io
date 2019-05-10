@@ -87,6 +87,12 @@ aside{
   margin-bottom: 0;
 }
 
+.company__logo{
+  width: 96px;
+  height: 96px;
+  margin-right: 1rem;
+}
+
 @media (min-width: 768px) {
   aside {
       height: 100%;
