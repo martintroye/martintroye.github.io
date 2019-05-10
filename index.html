@@ -19,328 +19,344 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Language" content="en">
+    <meta developed-by="Troy Martin">
     <title>Troy Martin</title>
+    <!-- load the linked external style sheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Code+Pro:400,700" rel="stylesheet">
 
+    <!-- load the custom style sheet -->
     <link href="styles/styles.css" rel="stylesheet">
-
   </head>
   <body>
+    <!-- Main container -->
     <div class="container-fluid h-100">
       <div class="row h-100">
-          <aside class="col-12 col-md-2 p-0 fixed-top">
-              <!-- side menu -->
-              <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
-                  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                      <li class="nav-item">
-                          <img src="images/troymartin_portfoliob.jpg" alt="Troy Martin" title="Troy Martin" class="navbar__nav-item__headShot">
-                          <h3>Troy Martin</h3>
-                      </li>
-                      <li class="nav-item side__item portfolioLink" title="My portfolio">
-                        <a class="nav-link pl-0 text-nowrap"><i class="fas fa-code"></i> Portfolio</a>
-                      </li>
-                      <li class="nav-item side__item aboutMeLink" title="About me">
-                          <a class="nav-link pl-0 text-nowrap"><i class="fas fa-info-circle"></i> About me</a>
-                      </li>
-                      <li class="nav-item side__item skillsLink" title="My skills">
-                        <a class="nav-link pl-0 text-nowrap"><i class="fas fa-tools"></i> Skills</a>
-                      </li>
-                      <br/>
-                      <p class="contactMe">Contact me</p>
-                      <li class="nav-item side__item">
-                        <a class="nav-link p l-0 text-nowrap" href="mailto:troyemartin@gmail.com"><i class="fas fa-envelope" title="troyemartin@gmail.com"></i> Email</a>
-                      </li>
-                      <li class="nav-item side__item">
-                        <a class="nav-link p l-0 text-nowrap" href="https://www.linkedin.com/in/troy-martin-52713b45/" target="_blank"><i class="fab fa-linkedin" title="linkedIn"></i> LinkedIn</a>
-                      </li>
-                      <li class="nav-item side__item">
-                        <a class="nav-link p l-0 text-nowrap" href="https://github.com/martintroye" target="_blank"><i class="fab fa-github" title="GitHub"></i> GitHub</a>
-                      </li>
-                      <li class="nav-item hamburger" style="float: right;">
-                        <button class="navbar-toggler toggler-example collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class=""><i class="fas fa-bars fa-1x"></i></span></button>
-                      </li>
-                  </ul>
-              </nav>
-              <!-- hamburger menu displayed based on media query -->
-              <div class="navbar-collapse collapse navbar__top" id="navbarSupportedContent">
-                <ul class="top__menu navbar-nav" style="margin-right: 2rem;">
-                  <li class="nav-item portfolioLink" title="My portfolio">
-                    <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-code"></i> Portfolio</a>
-                  </li>
-                  <li class="nav-item aboutMeLink" title="About me">
-                    <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-info-circle"></i> About me</a>
-                  </li>
-                  <li class="nav-item skillsLink" title="My skills">
-                    <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-tools"></i> Skills</a>
-                  </li>
-                  <br/>
-                  <p>Contact me</p>
-                  <li class="nav-item emailLink">
-                    <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-envelope" title="troyemartin@gmail.com"></i> Email</a>
-                  </li>
-                  <li class="nav-item linkedInLink">
-                    <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fab fa-linkedin" title="LinkedIn"></i> LinkedIn</a>
-                  </li>
-                  <li class="nav-item gitHubLink">
-                    <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fab fa-github" title="GitHub"></i>GitHub</a>
-                  </li>
-                </ul>
-              </div>
-          </aside>
+        <!-- side menu -->
+        <aside class="col-12 col-md-2 p-0 fixed-top">
+          <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
+            <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+              <li class="nav-item">
+                <img src="images/troymartin_portfoliob.jpg" alt="Troy Martin" title="Troy Martin" class="navbar__nav-item__headShot">
+                <h3>Troy Martin</h3>
+              </li>
+              <li class="nav-item side__item portfolioLink" title="My portfolio">
+                <a class="nav-link pl-0 text-nowrap"><i class="fas fa-code"></i> Portfolio</a>
+              </li>
+              <li class="nav-item side__item aboutMeLink" title="About me">
+                <a class="nav-link pl-0 text-nowrap"><i class="fas fa-info-circle"></i> About me</a>
+              </li>
+              <li class="nav-item side__item skillsLink" title="My skills">
+                <a class="nav-link pl-0 text-nowrap"><i class="fas fa-tools"></i> Skills</a>
+              </li>
+              <br/>
+              <p class="contactMe">Contact me</p>
+              <li class="nav-item side__item">
+                <a class="nav-link p l-0 text-nowrap" href="mailto:troyemartin@gmail.com"><i class="fas fa-envelope" title="troyemartin@gmail.com"></i> Email</a>
+              </li>
+              <li class="nav-item side__item">
+                <a class="nav-link p l-0 text-nowrap" href="https://www.linkedin.com/in/troy-martin-52713b45/" target="_blank"><i class="fab fa-linkedin" title="linkedIn"></i> LinkedIn</a>
+              </li>
+              <li class="nav-item side__item">
+                <a class="nav-link p l-0 text-nowrap" href="https://github.com/martintroye" target="_blank"><i class="fab fa-github" title="GitHub"></i> GitHub</a>
+              </li>
+              <li class="nav-item hamburger" style="float: right;">
+                <button class="navbar-toggler toggler-example collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class=""><i class="fas fa-bars fa-1x"></i></span></button>
+              </li>
+            </ul>
+          </nav>
+          <!-- hamburger menu displayed based on media query -->
+          <div class="navbar-collapse collapse navbar__top" id="navbarSupportedContent">
+            <ul class="top__menu navbar-nav" style="margin-right: 2rem;">
+              <li class="nav-item portfolioLink" title="My portfolio">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-code"></i> Portfolio</a>
+              </li>
+              <li class="nav-item aboutMeLink" title="About me">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-info-circle"></i> About me</a>
+              </li>
+              <li class="nav-item skillsLink" title="My skills">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-tools"></i> Skills</a>
+              </li>
+              <br/>
+              <p>Contact me</p>
+              <li class="nav-item emailLink">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-envelope" title="troyemartin@gmail.com"></i> Email</a>
+              </li>
+              <li class="nav-item linkedInLink">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fab fa-linkedin" title="LinkedIn"></i> LinkedIn</a>
+              </li>
+              <li class="nav-item gitHubLink">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fab fa-github" title="GitHub"></i>GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
 
-          <main class="col offset-md-2 bg-faded py-3">
-              <div class="row col" id="portfolio">
-                  <h2><i class="fas fa-code" title="Portfolio"></i> Portfolio</h2>
-                  <div class="row">
-                      <div class="col col-sm col-md">
-                          <div class="card">
-                              <img class="card-img-top card__image" src="images/biosite.png" alt="Bio site" title="Bio site">
-                              <div class="card-body">
-                                <h5 class="card-title">Bio site <i id="bioSite" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
-                                <p class="card-text">Web site for Hannah Martin.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col col-sm col-md">
-                          <div class="card">
-                              <img class="card-img-top" src="images/hal-gatewood-613602-unsplash.jpg" alt="Bio site prototype" title="Bio site prototype, Photo by Hal Gatewood on Unsplash">
-                              <div class="card-body">
-                                <h5 class="card-title">Bio site prototype <i id="bioPrototype" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
-                                <p class="card-text">Prototype of Bio site</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="w-100 d-md-none"></div>
-                      <div class="col col-sm col-mdl">
-                          <div class="card">
-                              <img class="card-img-top" src="images/max-chen-1182043-unsplash.jpg" alt="Enterprise JavaScript I" title="Enterprise JavaScript I, Photo by Max Chen on Unsplash">
-                              <div class="card-body">
-                                <h5 class="card-title">Enterprise JavaScript I <i id="javascriptOne" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
-                                <p class="card-text">GitHub repository.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="w-100 d-none d-lg-block"></div>
-                      <div class="col col-sm col-md">
-                          <div class="card">
-                              <img class="card-img-top" src="images/jose-alejandro-cuffia-799485-unsplash.jpg" alt="Portfolio prototype" title="Portfolio prototype, Photo by Jose Alejandro Cuffia on Unsplash">
-                              <div class="card-body">
-                                <h5 class="card-title">Portfolio prototype <i id="portfolioPrototype" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
-                                <p class="card-text">The prototype for this site.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="w-100 d-md-none"></div>
-                      <div class="col col-sm col-md">
-                          <div class="card">
-                              <img class="card-img-top" src="images/pankaj-patel-516696-unsplash.jpg" alt="Enterprise JavaScript II" title="Enterprise JavaScript II, Photo by Pankaj Patel on Unsplash">
-                              <div class="card-body">
-                                <h5 class="card-title">Enterprise JavaScript II <i id="javascriptTwo" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
-                                <p class="card-text">GitHub repository.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col col-sm col-md"></div>
-                  </div>
-
-              </div>
-              <div id="about" class="row col-12" style="display:none;" >
-                  <div class="row col-12">
-                      <h2><i class="fas fa-info-circle" title="About me"></i> About me</h2>
-                  </div>
-                  <div class="row row--buffer">
-                      <div class="col-12">
-                        <div class="row col-12">
-                          <h3>Bio</h3>
-                        </div>
-                        <div class="row col-12">
-                          <p>
-                              Troy Martin is a software developer with over twenty years of experience creating desktop and web-based applications. With a varied technology background, Troy specializes in building complete web based solutions using Microsoft .Net C#, HTML, Javascript and Microsoft SQL Server.
-                              Troy has an Associates of Applied Science degree in Architectural Drafting and started programming writing custom functions for AutoCAD computer-aided drafting stations in a scripting language called AutoLISP. Switching fields, Troy worked for several years designing network installations and setting up file servers for point of sales systems.
-                              Troy went back to programming and developing web applications after being introduced to the server side language, ColdFusion which he used to solve a reporting issue for a coworker. After several years developing ColdFusion applications Troy switched to developing Microsoft .Net web applications in C# and has been using the Microsoft stack for the last fifteen years.
-                              With a passion for learning new technologies, Troy is currently learning Angular, TypeScript, and other modern web-based
-                              technologies and is researching machine learning.
-                          </p>
-                          <p>Troy enjoys travel, reading, running, and taking long walks with his wife and dog.</p>
-                        </div>
-                        <div class="row row--buffer col-12">
-                            <h3>Work history</h3>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                              <img class="company__logo" src="images/fcsa.png" title="Farm Credit Services of America" alt="Farm Credit Services of America">
-                          </div>
-                          <div class="col">
-                              <p><b>Lead Application Developer</b></p>
-                              <p>Farm Credit Services of America</p>
-                              <p>Apr 2018 – Present</p>
-                          </div>
-                        </div>
-                        <div class="row row--buffer">
-                            <div class="col">
-                                <img class="company__logo" src="images/tigerpaw.png" title="Tigerpaw Software" alt="Tigerpaw Software">
-                            </div>
-                            <div class="col">
-                                <p><b>Software Architect</b></p>
-                                <p>Tigerpaw Software</p>
-                                <p>Aug 2014 – Apr 2018</p>
-                            </div>
-                        </div>
-                        <div class="row row--buffer">
-                            <div class="col">
-                                <img class="company__logo" src="images/werner.png" title="Werner Enterprises" alt="Werner Enterprises">
-                            </div>
-                            <div class="col">
-                                <p><b>Application Architect</b></p>
-                                <p>Werner Enterprises</p>
-                                <p>Oct 2010 – Aug 2014</p>
-                            </div>
-                        </div>
-                        <div class="row row--buffer">
-                            <div class="col">
-                                <img class="company__logo" src="images/csg.png" title="CSG International" alt="CSG International">
-                            </div>
-                            <div class="col">
-                                <p><b>Lead Software Development Engineer</b></p>
-                                <p>CSG International</p>
-                                <p>Mar 2008 – Oct 2010</p>
-                            </div>
-                        </div>
-                        <div class="row row--buffer">
-                            <div class="col">
-                                <img class="company__logo" src="images/werner.png" title="Werner Enterprises" alt="Werner Enterprises">
-                            </div>
-                            <div class="col">
-                                <p><b>Web Developer / Systems Analyst / Lead Developer / Supervisor</b></p>
-                                <p>Werner Enterprises</p>
-                                <p>Jun 2000 – Mar 2008</p>
-                            </div>
-                        </div>
-
-                        <div class="row row--buffer col-12">
-                            <h3>Education</h3>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <img class="company__logo" src="images/bellevue.png" title="Bellevue University" alt="Bellevue University">
-                            </div>
-                            <div class="col">
-                                <p>Bellevue University</p>
-                                <p>Bachelor of Science in Web Development</p>
-                                <p>2018 - present</p>
-                                <p>Expected graduation January 2019</p>
-                            </div>
-                        </div>
-                        <div class="row row--buffer">
-                            <div class="col">
-                                <img class="company__logo" src="images/scc.jpg" title="Southeast Community College" alt="Southeast Community College">
-                            </div>
-                            <div class="col">
-                                <p>Southeast Community College</p>
-                                <p>Associate's degree Field Of StudyArchitectural Drafting and Architectural CAD/CADD</p>
-                                <p>1987 – 1989</p>
-                            </div>
-                        </div>
+        <main class="col offset-md-2 bg-faded py-3">
+          <div class="row col" id="portfolio">
+            <h2><i class="fas fa-code" title="Portfolio"></i> Portfolio</h2>
+            <div class="row">
+              <div class="col col-sm col-md">
+                  <div class="card">
+                      <img class="card-img-top card__image" src="images/biosite.png" alt="Bio site" title="Bio site">
+                      <div class="card-body">
+                        <h5 class="card-title">Bio site <i id="bioSite" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <p class="card-text">Web site for Hannah Martin.</p>
                       </div>
                   </div>
               </div>
-              <div id="skills" class="row col-12" style="display:none;">
-                <div class="row col-12">
-                  <h2><i class="fas fa-tools" title="Skills"></i> Skills</h2>
-                </div>
-                <div class="row row--buffer">
-                  <div class="col col-md skill">
-                    <img src="images/csharp.png" title="C#" alt="C#" class="company__logo">
-                    C#
+              <div class="col col-sm col-md">
+                  <div class="card">
+                      <img class="card-img-top" src="images/hal-gatewood-613602-unsplash.jpg" alt="Bio site prototype" title="Bio site prototype, Photo by Hal Gatewood on Unsplash">
+                      <div class="card-body">
+                        <h5 class="card-title">Bio site prototype <i id="bioPrototype" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <p class="card-text">Prototype of Bio site</p>
+                      </div>
                   </div>
-                  <div class="col col-md skill">
-                    <img src="images/aspnet.png" title="ASP .NET MVC and WebAPI" alt="ASP .NET MVC and WebAPI" class="company__logo">
-                    ASP .NET MVC and WebAPI
+              </div>
+              <!-- the w-100 style cause column line feed -->
+              <div class="w-100 d-md-none"></div>
+              <div class="col col-sm col-mdl">
+                  <div class="card">
+                      <img class="card-img-top" src="images/max-chen-1182043-unsplash.jpg" alt="Enterprise JavaScript I" title="Enterprise JavaScript I, Photo by Max Chen on Unsplash">
+                      <div class="card-body">
+                        <h5 class="card-title">Enterprise JavaScript I <i id="javascriptOne" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <p class="card-text">GitHub repository.</p>
+                      </div>
                   </div>
-                  <div class="col col-md skill">
-                    <img src="images/dotnetcore.png" title=".NET Core" alt=".NET Core" class="company__logo">
-                    .NET Core
+              </div>
+              <!-- the w-100 style cause column line feed -->
+              <div class="w-100 d-none d-lg-block"></div>
+              <div class="col col-sm col-md">
+                  <div class="card">
+                      <img class="card-img-top" src="images/jose-alejandro-cuffia-799485-unsplash.jpg" alt="Portfolio prototype" title="Portfolio prototype, Photo by Jose Alejandro Cuffia on Unsplash">
+                      <div class="card-body">
+                        <h5 class="card-title">Portfolio prototype <i id="portfolioPrototype" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <p class="card-text">The prototype for this site.</p>
+                      </div>
                   </div>
-                  <div class="col col-md skill">
-                    <img src="images/html5.png" title="HTML" alt="HTML" class="company__logo">
-                    HTML
+              </div>
+              <!-- the w-100 style cause column line feed -->
+              <div class="w-100 d-md-none"></div>
+              <div class="col col-sm col-md">
+                  <div class="card">
+                      <img class="card-img-top" src="images/pankaj-patel-516696-unsplash.jpg" alt="Enterprise JavaScript II" title="Enterprise JavaScript II, Photo by Pankaj Patel on Unsplash">
+                      <div class="card-body">
+                        <h5 class="card-title">Enterprise JavaScript II <i id="javascriptTwo" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <p class="card-text">GitHub repository.</p>
+                      </div>
                   </div>
-                  <div class="col col-md skill">
-                    <img src="images/css3.png" title="CSS3" alt="CSS3" class="company__logo">
-                    CSS3
-                  </div>
-                  <div class="col col-md skill">
-                      <img src="images/bootstrap.png" title="Bootstrap" alt="Bootstrap" class="company__logo">
-                      Bootstrap
-                    </div>
-                  <div class="col col-md skill">
-                    <img src="images/javascript.png" title="JavaScript" alt="JavaScript" class="company__logo">
-                    JavaScript
-                  </div>
-                  <div class="col col-md skill">
-                    <img src="images/jquery.png" title="jQuery" alt="jQuery" class="company__logo">
-                    jQuery
-                  </div>
-                  <div class="col col-md skill">
-                    <img src="images/knockout.png" title="Knockoutjs" alt="Knockoutjs" class="company__logo">
-                    Knockoutjs
-                  </div>
-                  <div class="col col-md skill">
-                    <img src="images/nodejs.png" title="NodeJS" alt="NodeJS" class="company__logo">
-                    NodeJS
-                  </div>
-                  <div class="col col-md skill">
-                    <img src="images/angular.png" title="Angular" alt="Angular" class="company__logo">
-                    Angular
-                  </div>
-                  <div class="col col-md skill">
-                    <img src="images/typescript.png" title="TypeScript" alt="TypeScript" class="company__logo">
-                    TypeScript
-                  </div>
-                </div>
+              </div>
+              <div class="col col-sm col-md"></div>
             </div>
 
-          </main>
+          </div>
+          <!-- about me, hidden by default -->
+          <div id="about" class="row col-12" style="display:none;" >
+            <div class="row col-12">
+              <h2><i class="fas fa-info-circle" title="About me"></i> About me</h2>
+            </div>
+            <div class="row row--buffer">
+              <div class="col-12">
+                <div class="row col-12">
+                  <h3>Bio</h3>
+                </div>
+                <div class="row col-12">
+                  <p>
+                      Troy Martin is a software developer with over twenty years of experience creating desktop and web-based applications. With a varied technology background, Troy specializes in building complete web based solutions using Microsoft .Net C#, HTML, Javascript and Microsoft SQL Server.
+                      Troy has an Associates of Applied Science degree in Architectural Drafting and started programming writing custom functions for AutoCAD computer-aided drafting stations in a scripting language called AutoLISP. Switching fields, Troy worked for several years designing network installations and setting up file servers for point of sales systems.
+                      Troy went back to programming and developing web applications after being introduced to the server side language, ColdFusion which he used to solve a reporting issue for a coworker. After several years developing ColdFusion applications Troy switched to developing Microsoft .Net web applications in C# and has been using the Microsoft stack for the last fifteen years.
+                      With a passion for learning new technologies, Troy is currently learning Angular, TypeScript, and other modern web-based
+                      technologies and is researching machine learning.
+                  </p>
+                  <p>Troy enjoys travel, reading, running, and taking long walks with his wife and dog.</p>
+                </div>
+                <div class="row row--buffer col-12">
+                  <h3>Work history</h3>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img class="company__logo" src="images/fcsa.png" title="Farm Credit Services of America" alt="Farm Credit Services of America">
+                  </div>
+                  <div class="col">
+                    <p><b>Lead Application Developer</b></p>
+                    <p>Farm Credit Services of America</p>
+                    <p>Apr 2018 – Present</p>
+                  </div>
+                </div>
+                <div class="row row--buffer">
+                  <div class="col">
+                    <img class="company__logo" src="images/tigerpaw.png" title="Tigerpaw Software" alt="Tigerpaw Software">
+                  </div>
+                  <div class="col">
+                    <p><b>Software Architect</b></p>
+                    <p>Tigerpaw Software</p>
+                    <p>Aug 2014 – Apr 2018</p>
+                  </div>
+                </div>
+                <div class="row row--buffer">
+                  <div class="col">
+                    <img class="company__logo" src="images/werner.png" title="Werner Enterprises" alt="Werner Enterprises">
+                  </div>
+                  <div class="col">
+                    <p><b>Application Architect</b></p>
+                    <p>Werner Enterprises</p>
+                    <p>Oct 2010 – Aug 2014</p>
+                  </div>
+                </div>
+                <div class="row row--buffer">
+                  <div class="col">
+                    <img class="company__logo" src="images/csg.png" title="CSG International" alt="CSG International">
+                  </div>
+                  <div class="col">
+                    <p><b>Lead Software Development Engineer</b></p>
+                    <p>CSG International</p>
+                    <p>Mar 2008 – Oct 2010</p>
+                  </div>
+                </div>
+                <div class="row row--buffer">
+                  <div class="col">
+                    <img class="company__logo" src="images/werner.png" title="Werner Enterprises" alt="Werner Enterprises">
+                  </div>
+                  <div class="col">
+                    <p><b>Web Developer / Systems Analyst / Lead Developer / Supervisor</b></p>
+                    <p>Werner Enterprises</p>
+                    <p>Jun 2000 – Mar 2008</p>
+                  </div>
+                </div>
+
+                <div class="row row--buffer col-12">
+                  <h3>Education</h3>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img class="company__logo" src="images/bellevue.png" title="Bellevue University" alt="Bellevue University">
+                  </div>
+                  <div class="col">
+                    <p>Bellevue University</p>
+                    <p>Bachelor of Science in Web Development</p>
+                    <p>2018 - present</p>
+                    <p>Expected graduation January 2019</p>
+                  </div>
+                </div>
+                <div class="row row--buffer">
+                  <div class="col">
+                    <img class="company__logo" src="images/scc.jpg" title="Southeast Community College" alt="Southeast Community College">
+                  </div>
+                  <div class="col">
+                    <p>Southeast Community College</p>
+                    <p>Associate's degree Field Of StudyArchitectural Drafting and Architectural CAD/CADD</p>
+                    <p>1987 – 1989</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- skill, hidden by default-->
+          <div id="skills" class="row col-12" style="display:none;">
+            <div class="row col-12">
+              <h2><i class="fas fa-tools" title="Skills"></i> Skills</h2>
+            </div>
+            <div class="row row--buffer">
+              <div class="col col-md skill">
+                <img src="images/csharp.png" title="C#" alt="C#" class="company__logo">
+                C#
+              </div>
+              <div class="col col-md skill">
+                <img src="images/aspnet.png" title="ASP .NET MVC and WebAPI" alt="ASP .NET MVC and WebAPI" class="company__logo">
+                ASP .NET MVC and WebAPI
+              </div>
+              <div class="col col-md skill">
+                <img src="images/dotnetcore.png" title=".NET Core" alt=".NET Core" class="company__logo">
+                .NET Core
+              </div>
+              <div class="col col-md skill">
+                <img src="images/html5.png" title="HTML" alt="HTML" class="company__logo">
+                HTML
+              </div>
+              <div class="col col-md skill">
+                <img src="images/css3.png" title="CSS3" alt="CSS3" class="company__logo">
+                CSS3
+              </div>
+              <div class="col col-md skill">
+                  <img src="images/bootstrap.png" title="Bootstrap" alt="Bootstrap" class="company__logo">
+                  Bootstrap
+                </div>
+              <div class="col col-md skill">
+                <img src="images/javascript.png" title="JavaScript" alt="JavaScript" class="company__logo">
+                JavaScript
+              </div>
+              <div class="col col-md skill">
+                <img src="images/jquery.png" title="jQuery" alt="jQuery" class="company__logo">
+                jQuery
+              </div>
+              <div class="col col-md skill">
+                <img src="images/knockout.png" title="Knockoutjs" alt="Knockoutjs" class="company__logo">
+                Knockoutjs
+              </div>
+              <div class="col col-md skill">
+                <img src="images/nodejs.png" title="NodeJS" alt="NodeJS" class="company__logo">
+                NodeJS
+              </div>
+              <div class="col col-md skill">
+                <img src="images/angular.png" title="Angular" alt="Angular" class="company__logo">
+                Angular
+              </div>
+              <div class="col col-md skill">
+                <img src="images/typescript.png" title="TypeScript" alt="TypeScript" class="company__logo">
+                TypeScript
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
-  </div>
+    </div>
 
-  <div id="portfolioModal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header modal-header--background">
-          <h5 id="modalTitle" class="modal-title"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-window-close"></i>
-          </button>
-        </div>
-        <div id="modalBody" class="modal-body">
+    <!-- div representing the modal window that opens with additional project information -->
+    <div id="portfolioModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-header--background">
+            <h5 id="modalTitle" class="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+          <div id="modalBody" class="modal-body">
 
-        </div>
-        <div id="modalFooter" class="modal-footer">
-          <i id="modalLink" title="Open the site" class="siteLink fas fa-external-link-alt"></i>
-          <i id="modalGitHubLink" title="GitHub repository" class="siteLink fab fa-github"></i>
+          </div>
+          <div id="modalFooter" class="modal-footer">
+            <i id="modalLink" title="Open the site" class="siteLink fas fa-external-link-alt"></i>
+            <i id="modalGitHubLink" title="GitHub repository" class="siteLink fab fa-github"></i>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="scripts/links-module.js"></script>
-  <script src="scripts/portfolio-modal-module.js"></script>
+    <!-- link required script files, included at the bottom to help with page load -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- custom script files for navigation and moal window control -->
+    <script src="scripts/links-module.js"></script>
+    <script src="scripts/portfolio-modal-module.js"></script>
 
-  <script>
-    linksModule.apply();
-    portfolioModalModule.apply();
-  </script>
+    <script>
+      // jQuery on ready function
+      $(function(){
+        // call the apply function on the custom linksModule to apply custom event handlers.
+        linksModule.apply();
+        // call the apply function on the custom portfolioModalModule to apply custom event handlers.
+        portfolioModalModule.apply();
+      });
+    </script>
 
   </body>
 </html>
