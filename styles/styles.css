@@ -87,10 +87,17 @@ aside{
   margin-bottom: 0;
 }
 
+.skill{
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
 .company__logo{
-  width: 96px;
-  height: 96px;
+  max-height: 100px;
   margin-right: 1rem;
+  display: table-cell;
+  text-align: center;
+  margin:0 auto;
 }
 
 .card{
