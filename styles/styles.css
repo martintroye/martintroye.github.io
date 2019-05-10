@@ -93,6 +93,10 @@ aside{
   margin-right: 1rem;
 }
 
+.card{
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 768px) {
   aside {
       height: 100%;
