@@ -8,6 +8,7 @@
 ;===========================================
 
 Resources:
+Layout inspiration: https://andrewborstein.com/
 Responsive sidebar example (https://www.codeply.com/go/SCcAHh39Pa) By skelly (https://www.codeply.com/users/skelly)
 
 Photo hal-gatewood-613602-unsplash.jpg by Hal Gatewood (https://unsplash.com/@halgatewood) on Unsplash
@@ -35,6 +36,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
     <div class="container-fluid h-100">
       <div class="row h-100">
           <aside class="col-12 col-md-2 p-0 fixed-top">
+              <!-- side menu -->
               <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
                   <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                       <li class="nav-item">
@@ -66,6 +68,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                       </li>
                   </ul>
               </nav>
+              <!-- hamburger menu displayed based on media query -->
               <div class="navbar-collapse collapse navbar__top" id="navbarSupportedContent">
                 <ul class="top__menu navbar-nav" style="margin-right: 2rem;">
                   <li class="nav-item portfolioLink" title="My portfolio">
@@ -171,50 +174,50 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                             <h3>Work history</h3>
                         </div>
                         <div class="row">
-                          <div class="col-2">
+                          <div class="col">
                               <img class="company__logo" src="images/fcsa.png" title="Farm Credit Services of America" alt="Farm Credit Services of America">
                           </div>
-                          <div class="col-10">
+                          <div class="col">
                               <p><b>Lead Application Developer</b></p>
                               <p>Farm Credit Services of America</p>
                               <p>Apr 2018 – Present</p>
                           </div>
                         </div>
                         <div class="row row--buffer">
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="company__logo" src="images/tigerpaw.png" title="Tigerpaw Software" alt="Tigerpaw Software">
                             </div>
-                            <div class="col-10">
+                            <div class="col">
                                 <p><b>Software Architect</b></p>
                                 <p>Tigerpaw Software</p>
                                 <p>Aug 2014 – Apr 2018</p>
                             </div>
                         </div>
                         <div class="row row--buffer">
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="company__logo" src="images/werner.png" title="Werner Enterprises" alt="Werner Enterprises">
                             </div>
-                            <div class="col-10">
+                            <div class="col">
                                 <p><b>Application Architect</b></p>
                                 <p>Werner Enterprises</p>
                                 <p>Oct 2010 – Aug 2014</p>
                             </div>
                         </div>
                         <div class="row row--buffer">
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="company__logo" src="images/csg.png" title="CSG International" alt="CSG International">
                             </div>
-                            <div class="col-10">
+                            <div class="col">
                                 <p><b>Lead Software Development Engineer</b></p>
                                 <p>CSG International</p>
                                 <p>Mar 2008 – Oct 2010</p>
                             </div>
                         </div>
                         <div class="row row--buffer">
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="company__logo" src="images/werner.png" title="Werner Enterprises" alt="Werner Enterprises">
                             </div>
-                            <div class="col-10">
+                            <div class="col">
                                 <p><b>Web Developer / Systems Analyst / Lead Developer / Supervisor</b></p>
                                 <p>Werner Enterprises</p>
                                 <p>Jun 2000 – Mar 2008</p>
@@ -225,10 +228,10 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                             <h3>Education</h3>
                         </div>
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="company__logo" src="images/bellevue.png" title="Bellevue University" alt="Bellevue University">
                             </div>
-                            <div class="col-10">
+                            <div class="col">
                                 <p>Bellevue University</p>
                                 <p>Bachelor of Science in Web Development</p>
                                 <p>2018 - present</p>
@@ -236,10 +239,10 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                             </div>
                         </div>
                         <div class="row row--buffer">
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="company__logo" src="images/scc.jpg" title="Southeast Community College" alt="Southeast Community College">
                             </div>
-                            <div class="col-10">
+                            <div class="col">
                                 <p>Southeast Community College</p>
                                 <p>Associate's degree Field Of StudyArchitectural Drafting and Architectural CAD/CADD</p>
                                 <p>1987 – 1989</p>
@@ -249,12 +252,35 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                   </div>
               </div>
               <div id="skills" class="row col-12" style="display:none;">
-                <h2><i class="fas fa-tools"></i> Skills</h2>
-                <div class="row">
-                    <div class="col-12">
-                      badges for different technologies
-                    </div>
+                <div class="row col-12">
+                  <h2><i class="fas fa-tools" title="Skills"></i> Skills</h2>
+                </div>
+                <div class="row row--buffer">
+                  <div class="col col-md" style="text-align: center;">
+                    <img src="images/html5.png" style="display: table-cell;text-align: center;margin:0 auto;padding-bottom: 1.1rem;" class="company__logo">
+                    HTML
                   </div>
+                  <div class="col col-md" style="text-align: center;">
+                      <img src="images/css3.png" style="display: table-cell;text-align: center;margin:0 auto;padding-bottom: 1.1rem;" class="company__logo">
+                      CSS3
+                  </div>
+                  <div class="col col-md" style="text-align: center;">
+                      <img src="images/javascript.png" style="display: table-cell;text-align: center;margin:0 auto;padding-bottom: 1.1rem;" class="company__logo">
+                      JavaScript
+                  </div>
+                  <div class="col col-md" style="text-align: center;">
+                      <img src="images/jquery.png" style="display: table-cell;text-align: center;margin:0 auto;padding-bottom: 1.1rem;" class="company__logo">
+                      jQuery
+                  </div>
+                  <div class="col col-md" style="text-align: center;">
+                      <img src="images/knockout.png" style="display: table-cell;text-align: center;margin:0 auto;padding-bottom: 1.1rem;" class="company__logo">
+                      Knockoutjs
+                  </div>
+                  <div class="col col-md" style="text-align: center;">
+                      <img src="images/angular.png" style="display: table-cell;text-align: center;margin:0 auto;padding-bottom: 1.1rem;" class="company__logo">
+                      Angular
+                  </div>
+                </div>
             </div>
 
           </main>
