@@ -118,7 +118,11 @@ aside{
   }
 
   .card-title{
-    font-size: .6rem;
+    font-size: .8rem;
+  }
+
+  .card-title__button{
+    font-size: 1rem !important;
   }
 
   .nav-item--buffer{
