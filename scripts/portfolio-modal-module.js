@@ -135,7 +135,7 @@ var portfolioModalModule = (function(exports){
     // Set the click event to display the dialog for the Portfolio Prototype
     $("#portfolioPrototype").on("click",function(){
       setModalTitle("Portfolio site prototype");
-      setModalBody("<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>");
+      setModalBody("<ul><li>Style guide</li><li>Sketches</li></ul>");
 
       hideSiteLink();
       setGitHubLink("content/prototype.pdf");
