@@ -112,12 +112,11 @@ var portfolioModalModule = (function(exports){
 
     // Set the click event to display the dialog for the Bio Site Prototype
     $("#bioPrototype").on("click",function(){
-      setModalTitle("Bio site");
-      setModalBody("<ul><li>HTML</li><li>CSS</li></ul>");
+      setModalTitle("Bio site prototype");
+      setModalBody("<ul><li>Style guide</li><li>Components</li><li>Template</li></ul>");
 
-      showSiteLink();
-      setSiteLink("https://martintroye.github.io/biosite/");
-      setGitHubLink("https://github.com/martintroye/biosite");
+      hideSiteLink();
+      setGitHubLink("https://github.com/martintroye/biosite/blob/master/bio%20site%20Patterns.pdf");
 
       displayModal(true);
     })
@@ -135,19 +134,18 @@ var portfolioModalModule = (function(exports){
 
     // Set the click event to display the dialog for the Portfolio Prototype
     $("#portfolioPrototype").on("click",function(){
-      setModalTitle("Portfolio site");
+      setModalTitle("Portfolio site prototype");
       setModalBody("<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>");
 
-      showSiteLink();
-      setSiteLink("https://martintroye.github.io");
-      setGitHubLink("https://github.com/martintroye/martintroye.github.io");
+      hideSiteLink();
+      setGitHubLink("content/prototype.pdf");
 
       displayModal(true);
     })
 
     // Set the click event to display the dialog for Enterprise JavaScript II
     $("#javascriptTwo").on("click",function(){
-      setModalTitle("Enterprise JavaScript I");
+      setModalTitle("Enterprise JavaScript II");
       setModalBody("<ul><li>JavaScript</li><li>Node.js</li><li>Express</li></ul>");
 
       hideSiteLink();
