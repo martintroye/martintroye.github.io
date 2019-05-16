@@ -46,18 +46,18 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
         <aside class="col-12 col-md-2 p-0 fixed-top">
           <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
             <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-              <li class="nav-item">
+              <li class="nav-item nav-item--center">
                 <img src="images/troymartin_portfoliob.jpg" alt="Troy Martin" title="Troy Martin" class="navbar__nav-item__headShot">
                 <h3>Troy Martin</h3>
-              </li>
-              <li class="nav-item side__item portfolioLink" title="My portfolio">
-                <a class="nav-link pl-0 text-nowrap"><i class="fas fa-code"></i> Portfolio</a>
               </li>
               <li class="nav-item side__item aboutMeLink" title="About me">
                 <a class="nav-link pl-0 text-nowrap"><i class="fas fa-info-circle"></i> About me</a>
               </li>
               <li class="nav-item side__item skillsLink" title="My skills">
                 <a class="nav-link pl-0 text-nowrap"><i class="fas fa-tools"></i> Skills</a>
+              </li>
+              <li class="nav-item side__item portfolioLink" title="My portfolio">
+                <a class="nav-link pl-0 text-nowrap"><i class="fas fa-code"></i> Portfolio</a>
               </li>
               <br/>
               <p class="contactMe">Contact me</p>
@@ -78,14 +78,14 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
           <!-- hamburger menu displayed based on media query -->
           <div class="navbar-collapse collapse navbar__top" id="navbarSupportedContent">
             <ul class="top__menu navbar-nav" style="margin-right: 2rem;">
-              <li class="nav-item portfolioLink" title="My portfolio">
-                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-code"></i> Portfolio</a>
-              </li>
               <li class="nav-item aboutMeLink" title="About me">
                 <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-info-circle"></i> About me</a>
               </li>
               <li class="nav-item skillsLink" title="My skills">
                 <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-tools"></i> Skills</a>
+              </li>
+              <li class="nav-item portfolioLink" title="My portfolio">
+                <a class="nav-link pl-0 text-nowrap nav-link--white" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-code"></i> Portfolio</a>
               </li>
               <br/>
               <p>Contact me</p>
@@ -103,14 +103,14 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
         </aside>
 
         <main class="col offset-md-2 bg-faded py-3">
-          <div class="row col" id="portfolio">
+          <div class="row col" id="portfolio" style="display: none;">
             <h2><i class="fas fa-code" title="Portfolio"></i> Portfolio</h2>
             <div class="row">
               <div class="col col-sm col-md">
                   <div class="card">
                       <img class="card-img-top card__image" src="images/biosite.png" alt="Bio site" title="Bio site">
                       <div class="card-body">
-                        <h5 class="card-title">Bio site <i id="bioSite" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <h5 class="card-title">Bio site <i id="bioSite" class="fas fa-info-circle card-title__button" title="More information..."></i></h5>
                         <p class="card-text">Web site for Hannah Martin.</p>
                       </div>
                   </div>
@@ -119,7 +119,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                   <div class="card">
                       <img class="card-img-top" src="images/hal-gatewood-613602-unsplash.jpg" alt="Bio site prototype" title="Bio site prototype, Photo by Hal Gatewood on Unsplash">
                       <div class="card-body">
-                        <h5 class="card-title">Bio site prototype <i id="bioPrototype" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <h5 class="card-title">Bio site prototype <i id="bioPrototype" class="fas fa-info-circle card-title__button" title="More information..."></i></h5>
                         <p class="card-text">Prototype of Bio site</p>
                       </div>
                   </div>
@@ -130,7 +130,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                   <div class="card">
                       <img class="card-img-top" src="images/max-chen-1182043-unsplash.jpg" alt="Enterprise JavaScript I" title="Enterprise JavaScript I, Photo by Max Chen on Unsplash">
                       <div class="card-body">
-                        <h5 class="card-title">Enterprise JavaScript I <i id="javascriptOne" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <h5 class="card-title">Enterprise JavaScript I <i id="javascriptOne" class="fas fa-info-circle card-title__button" title="More information..."></i></h5>
                         <p class="card-text">GitHub repository.</p>
                       </div>
                   </div>
@@ -141,7 +141,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                   <div class="card">
                       <img class="card-img-top" src="images/jose-alejandro-cuffia-799485-unsplash.jpg" alt="Portfolio prototype" title="Portfolio prototype, Photo by Jose Alejandro Cuffia on Unsplash">
                       <div class="card-body">
-                        <h5 class="card-title">Portfolio prototype <i id="portfolioPrototype" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <h5 class="card-title">Portfolio prototype <i id="portfolioPrototype" class="fas fa-info-circle card-title__button" title="More information..."></i></h5>
                         <p class="card-text">The prototype for this site.</p>
                       </div>
                   </div>
@@ -152,7 +152,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
                   <div class="card">
                       <img class="card-img-top" src="images/pankaj-patel-516696-unsplash.jpg" alt="Enterprise JavaScript II" title="Enterprise JavaScript II, Photo by Pankaj Patel on Unsplash">
                       <div class="card-body">
-                        <h5 class="card-title">Enterprise JavaScript II <i id="javascriptTwo" class="fas fa-ellipsis-v card-title__button" title="More..."></i></h5>
+                        <h5 class="card-title">Enterprise JavaScript II <i id="javascriptTwo" class="fas fa-info-circle card-title__button" title="More information..."></i></h5>
                         <p class="card-text">GitHub repository.</p>
                       </div>
                   </div>
@@ -162,7 +162,7 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
 
           </div>
           <!-- about me, hidden by default -->
-          <div id="about" class="row col-12" style="display:none;" >
+          <div id="about" class="row col-12">
             <div class="row col-12">
               <h2><i class="fas fa-info-circle" title="About me"></i> About me</h2>
             </div>
@@ -336,8 +336,8 @@ Photo pankaj-patel-516696-unsplash.jpg by Pankaj Patel (https://unsplash.com/@pa
 
           </div>
           <div id="modalFooter" class="modal-footer">
-            <i id="modalLink" title="Open the site" class="siteLink fas fa-external-link-alt"></i>
-            <i id="modalGitHubLink" title="GitHub repository" class="siteLink fab fa-github"></i>
+            <i id="modalLink" title="Open the site" class="siteLink fas fa-external-link-alt card-title__button"></i>
+            <i id="modalGitHubLink" title="GitHub repository" class="siteLink fab fa-github card-title__button"></i>
           </div>
         </div>
       </div>

@@ -51,8 +51,18 @@ aside{
   cursor: pointer;
 }
 
+.card-title__button:hover{
+  color: #256eff;
+  cursor: pointer;
+}
+
 .nav-item--buffer{
   margin-top: 1.5rem;
+}
+
+.nav-item--center{
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .navbar__top{
@@ -104,10 +114,19 @@ aside{
   margin-bottom: 1.5rem;
 }
 
+
+
+.navbar--center{
+  text-align: center;
+}
+
+.menu--left{
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   aside {
       height: 100%;
-      border-right: .1rem solid #256eff;
   }
   .hamburger {
     display: none;
@@ -117,7 +136,6 @@ aside{
 @media (max-width: 768px) {
   aside {
       border-right: none;
-      border-bottom: .1rem solid #256eff;
   }
 
   .navbar__nav-item__headShot, .contactMe, .card-text, .side__item{
