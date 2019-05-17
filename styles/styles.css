@@ -42,6 +42,11 @@ aside{
   display: inline !important;
   padding: 0 .4rem 0 0 !important;
 }
+
+.row--section{
+  margin-top: 4rem;
+}
+
 .row--buffer{
   margin-top: 2rem;
 }
