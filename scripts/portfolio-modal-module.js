@@ -183,6 +183,21 @@ var portfolioModalModule = (function(exports){
       displayModal(true);
     })
 
+    // Set the click event to display the dialog for JavaScript project
+    $("#javascriptQuiz").on("click",function(){
+      // set the title and body of the dialog box
+      setModalTitle("JavaScript Quiz");
+      setModalBody("<ul><li>JavaScript</li><li>Knockout.js</li><li>CSS</li></ul>");
+
+      // call the hideSiteLine to hide the site link on the dialog
+      hideSiteLink();
+      // set the url for the git hub link
+      setGitHubLink("https://github.com/martintroye/web-330-JavaScript-Quiz");
+
+      // display the modal dialog
+      displayModal(true);
+    })
+
   };
 
   // return the exports object to expose the public methods and variables
