@@ -53,6 +53,10 @@ var linksModule = (function(exports){
       $("#skills").show();
     })
 
+    $(".diagramLink").on("click",function(){
+      window.location.href = "web-335/martin-diagrams.html";
+    })
+
   };
 
   // return the exports object to expose the public methods and variables

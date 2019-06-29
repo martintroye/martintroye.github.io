@@ -18,6 +18,11 @@ aside{
   background-color: #e8ecf2;
 }
 
+.navbar--light{
+  background-color: #e8ecf2 !important;
+  color: #000000;
+}
+
 .navbar__nav-item__headShot{
   max-width: 100%;
   height: auto;
@@ -27,6 +32,10 @@ aside{
 
 .nav-link{
   color: black;
+}
+
+.nav-link:hover{
+  color: #256eff !important;
 }
 
 .nav-item a.nav-link:hover{
@@ -166,5 +175,62 @@ aside{
   .hamburger, .navbar-toggler {
     display: inline !important;
   }
+}
+
+.body--padded{
+  padding-top: 8rem;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32rem;
+  min-width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  background-image: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  color: #256eff;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  color: #256eff;
+}
+
+.carousel-indicators li{
+  background-color: #256eff !important;
+}
+
+.image__credit{
+  font-size: .75rem !important;
+  color:#256eff;
+}
+
+.page__title{
+  margin-left: 10rem;
+  color: #256eff;
 }
 
