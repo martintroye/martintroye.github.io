@@ -53,8 +53,14 @@ var linksModule = (function(exports){
       $("#skills").show();
     })
 
+    // Set the click event on the diagrams option to display the diagrams page
     $(".diagramLink").on("click",function(){
       window.location.href = "web-335/martin-diagrams.html";
+    })
+
+    // Set the click event on the presentations option to display the presentations page
+    $(".presentationsLink").on("click",function(){
+      window.location.href = "web-420/martin-rest.html";
     })
 
   };
