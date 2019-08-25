@@ -198,6 +198,21 @@ var portfolioModalModule = (function(exports){
       displayModal(true);
     })
 
+    // Set the click event to display the dialog for JavaScript project
+    $("#apigateway").on("click",function(){
+      // set the title and body of the dialog box
+      setModalTitle("API Gateway");
+      setModalBody("<ul><li>NodeJS</li><li>Express</li><li>MongoDB</li></ul>");
+
+      // call the hideSiteLine to hide the site link on the dialog
+      setSiteLink("https://martin-api-gateway.herokuapp.com");
+      // set the url for the git hub link
+      setGitHubLink("https://github.com/martintroye/web-420/tree/master/api-gateway");
+
+      // display the modal dialog
+      displayModal(true);
+    })
+
   };
 
   // return the exports object to expose the public methods and variables
