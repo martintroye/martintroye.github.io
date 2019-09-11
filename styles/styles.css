@@ -24,7 +24,7 @@ aside{
 }
 
 .navbar__nav-item__headShot{
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
   border-radius: 50%;
 }
@@ -90,7 +90,8 @@ aside{
 }
 
 .nav-link--white:hover{
-  text-decoration: underline;
+  text-decoration: underline !important;
+  color: #ffffff !important;
 }
 
 .contact__list{

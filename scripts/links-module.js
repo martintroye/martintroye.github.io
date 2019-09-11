@@ -63,6 +63,11 @@ var linksModule = (function(exports){
       window.location.href = "web-420/martin-rest.html";
     })
 
+    // Set the click event on the presentations option to display the presentations page
+    $(".devopspresentationsLink").on("click",function(){
+      window.location.href = "web-430/martin-devops.html";
+    })
+
   };
 
   // return the exports object to expose the public methods and variables
