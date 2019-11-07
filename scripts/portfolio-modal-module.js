@@ -213,6 +213,21 @@ var portfolioModalModule = (function(exports){
       displayModal(true);
     })
 
+    // Set the click event to display the dialog for JavaScript project
+    $("#bobs").on("click",function(){
+      // set the title and body of the dialog box
+      setModalTitle("Bob's Computer Repair Shop");
+      setModalBody("<ul><li>Angular</li><li>Flex Layout</li></ul>");
+
+      // call the hideSiteLine to hide the site link on the dialog
+      hideSiteLink();
+      // set the url for the git hub link
+      setGitHubLink("https://github.com/martintroye/web-425/tree/master/martin-bobs/martin-bobs-web");
+
+      // display the modal dialog
+      displayModal(true);
+    })    
+
   };
 
   // return the exports object to expose the public methods and variables
